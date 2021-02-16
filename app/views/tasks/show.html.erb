@@ -1,0 +1,8 @@
+<div class="container">
+  <h1><%= @task.title %></h1>
+  <h4><%= @task.details %></h4>
+  <%= link_to 'Back', tasks_path, class: 'btn btn-light' %>
+  <%= link_to task_path(@task), method: :delete, style: 'color:lightgray', data: { confirm: "Delete #{@task.title}" } do %>
+    <i class="fas fa-times"></i>
+  <% end %>
+</div>

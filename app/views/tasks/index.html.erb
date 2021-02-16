@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>MY Tasks</h1>
+  <div class="cards">
+    <% @tasks.each do |task| %>
+       <%= render 'tasks/card', task: task %>
+    <% end %>
+  </div>
+  <%= link_to 'Add another task', new_task_path%>
+</div>
+
+<%# <i class="far fa-check-square"></i> %>
+<%# <i class="far fa-square"></i>%>
+
+
